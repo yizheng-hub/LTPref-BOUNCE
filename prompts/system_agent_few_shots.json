@@ -1,0 +1,26 @@
+[
+  {
+    "role": "user",
+    "content": "Target PMV Range: [-0.5, 0.5]\nThermal Sensation Description: neutral, very comfortable, neither hot nor cold\nUser CLO: 0.8, User MET: 1.2"
+  },
+  {
+    "role": "assistant",
+    "content": "Thought: The user prefers a neutral thermal sensation (PMV in [-0.5, 0.5]). I should design a question about \"neither hot nor cold\" and a scenario considering their CLO and MET.\nAction:\n```json\n{\n  \"question\": \"Do you prefer an indoor temperature that makes you feel just right, neither hot nor cold, almost as if you're unaware of the temperature's presence?\",\n  \"scenario\": {\n    \"air_temp\": 24.0,\n    \"mrt\": 24.0,\n    \"humidity\": 50,\n    \"air_vel\": 0.1\n  }\n}\n```"
+  },
+  {
+    "role": "user",
+    "content": "Target PMV Range: [0.0, 1.0]\nThermal Sensation Description: slightly warm\nUser CLO: 0.6, User MET: 1.5"
+  },
+  {
+    "role": "assistant",
+    "content": "Thought: The user prefers a slightly warm sensation (PMV in [0.0, 1.0]). I should design a question about \"pleasantly warm\" and a scenario considering their CLO and MET.\nAction:\n```json\n{\n  \"question\": \"Do you prefer a pleasantly warm indoor feeling where wearing a light shirt (like a T-shirt) feels just right, without feeling stuffy or sweaty?\",\n  \"scenario\": {\n    \"air_temp\": 25.5,\n    \"mrt\": 25.5,\n    \"humidity\": 55,\n    \"air_vel\": 0.1\n  }\n}\n```"
+  },
+  {
+    "role": "user",
+    "content": "Target PMV Range: [-1.0, 0.0]\nThermal Sensation Description: a bit cold, cool\nUser CLO: 1.0, User MET: 1.0"
+  },
+  {
+    "role": "assistant",
+    "content": "Thought: The user prefers a slightly cool sensation (PMV in [-1.0, 0.0]). I should design a question about feeling \"a bit cool\" and a scenario considering their CLO and MET.\nAction:\n```json\n{\n  \"question\": \"Do you enjoy an indoor environment that's slightly cool, but not so cold that you shiver, perhaps making you want to put on a light jacket for added comfort?\",\n  \"scenario\": {\n    \"air_temp\": 22.5,\n    \"mrt\": 22.5,\n    \"humidity\": 45,\n    \"air_vel\": 0.1\n  }\n}\n```"
+  }
+]

@@ -1,0 +1,14 @@
+{
+    "agent_id": "LTPref_System",
+    "model": "gpt-4o-mini",
+    "training_setting": {
+      "model_type": "api",
+      "api_key": "sk-zk2021648b29a1a75397af794457c96f17e68357ccb66501",
+      "max_new_tokens": 512,
+      "temperature": 0.5,
+      "top_p": 0.9,
+      "max_length": 4096,
+      "timeout": 15
+    },
+    "system_message": "You are an expert in thermal comfort question design. Your task is to generate a 'yes/no' question for a thermal preference survey and provide a representative indoor environment scenario.\nYour response MUST be in strict JSON format, and in English, enclosed by triple backticks and marked as 'json'. It MUST contain two keys: \"question\" (string) and \"scenario\" (object). The \"scenario\" object MUST contain \"air_temp\", \"mrt\", \"humidity\", and \"air_vel\" (all numbers). Do NOT add any extra explanations or natural language text outside the JSON block."
+  }
