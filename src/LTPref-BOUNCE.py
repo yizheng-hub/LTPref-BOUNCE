@@ -69,7 +69,7 @@ def contains_word_match(text: str, keywords: list[str]) -> bool:
 
 # --- Global Configuration Parameters ---
 # File Paths based on the new folder structure
-PROCESSED_DATA_INPUT_PATH = "../data/processed_thermal_comfort_data.csv"
+PROCESSED_DATA_INPUT_PATH = "../data/CTCD_processed_thermal_comfort_data.csv"
 # or use ASHRAE_cleaned_OFFICE_for_simulation.csv
 
 # NLI Model Paths
