@@ -3,7 +3,7 @@
     "model": "gpt-4o-mini",
     "training_setting": {
         "model_type": "api",
-        "api_key": "sk-zk2021648b29a1a75397af794457c96f17e68357ccb66501",
+        "api_key": "",
         "max_new_tokens": 8,   
         "temperature": 0.0,
         "top_p": 0.9,

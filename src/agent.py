@@ -18,9 +18,7 @@ class Agent:
         self.model_type = self.config['training_setting']['model_type']
         self.api_key = self.config['training_setting']['api_key']
         # Default base_url can be adjusted if using a different OpenAI-compatible API
-        self.client = OpenAI(api_key=self.api_key, base_url="https://api.zzz-api.top/v1") 
-        # self.tokenizer = None # Not used in this API-based setup, but kept for consistency
-        # self.processor = None # Not used
+        self.client = OpenAI(api_key=self.api_key, base_url="") 
         self.system_prompt = self.config['system_message']
         self.memory = AgentMemory(self.config, memory_folder)
         self.logger = self._init_logger()
